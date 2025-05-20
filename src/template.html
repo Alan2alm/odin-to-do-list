@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <script type="module" src="./index.js"></script>
 </head>
@@ -14,7 +13,7 @@
         
     </div>
     <div id="sidebar">
-        <button id="ProyBtn">Proyects</button>
+        <button id="proyBtn">Projects</button>
         <button id="allTaskBtn">All Tasks</button>
         <button id="todayBtn">Today</button>
         <button id="weekBtn">Week</button>
@@ -23,111 +22,7 @@
     <div id="main">
         <div id="mainTitle">Tasks this Week</div>
         <div class="tasksList">
-            <div class="taskBox">
-                <div id="boxInfo">
-                    <div id="taskName">Laundry</div>
-                    <div id="taskDate">20/05/2026</div>
-                    <div id="taskPriority">High Priority</div>
-                    <div id="taskStatus">Not Completed</div>
-                    <div id="taskDescription">afpeakpeagoragjmaojmaslkff irgmjraeg feowmeofe.
-                        fdgmfd
-                    </div>
-                </div>
-                <div id="boxOptions">
-                    <button id="editBtn">Edit</button>
-                    <button id="deleteBtn">Dlt</button>
-                </div>
-            </div>
-            <div class="taskBox">
-                <div id="boxInfo">
-                    <div id="taskName">Laundry</div>
-                    <div id="taskDate">20/05/2026</div>
-                    <div id="taskPriority">High Priority</div>
-                    <div id="taskStatus">Not Completed</div>
-                    <div id="taskDescription">afpeakpeagoragjmaojmaslkff irgmjraeg feowmeofe.
-                        fdgmfd
-                    </div>
-                </div>
-                <div id="boxOptions">
-                    <button id="editBtn">Edit</button>
-                    <button id="deleteBtn">Dlt</button>
-                </div>
-            </div>
-            <div class="taskBox">
-                <div id="boxInfo">
-                    <div id="taskName">Laundry</div>
-                    <div id="taskDate">20/05/2026</div>
-                    <div id="taskPriority">High Priority</div>
-                    <div id="taskStatus">Not Completed</div>
-                    <div id="taskDescription">afpeakpeagoragjmaojmaslkff irgmjraeg feowmeofe.
-                        fdgmfd
-                    </div>
-                </div>
-                <div id="boxOptions">
-                    <button id="editBtn">Edit</button>
-                    <button id="deleteBtn">Dlt</button>
-                </div>
-            </div>
-            <div class="taskBox">
-                <div id="boxInfo">
-                    <div id="taskName">Laundry</div>
-                    <div id="taskDate">20/05/2026</div>
-                    <div id="taskPriority">High Priority</div>
-                    <div id="taskStatus">Not Completed</div>
-                    <div id="taskDescription">afpeakpeagoragjmaojmaslkff irgmjraeg feowmeofe.
-                        fdgmfd
-                    </div>
-                </div>
-                <div id="boxOptions">
-                    <button id="editBtn">Edit</button>
-                    <button id="deleteBtn">Dlt</button>
-                </div>
-            </div>
-            <div class="taskBox">
-                <div id="boxInfo">
-                    <div id="taskName">Laundry</div>
-                    <div id="taskDate">20/05/2026</div>
-                    <div id="taskPriority">High Priority</div>
-                    <div id="taskStatus">Not Completed</div>
-                    <div id="taskDescription">afpeakpeagoragjmaojmaslkff irgmjraeg feowmeofe.
-                        fdgmfd
-                    </div>
-                </div>
-                <div id="boxOptions">
-                    <button id="editBtn">Edit</button>
-                    <button id="deleteBtn">Dlt</button>
-                </div>
-            </div>
-            <div class="taskBox">
-                <div id="boxInfo">
-                    <div id="taskName">Laundry</div>
-                    <div id="taskDate">20/05/2026</div>
-                    <div id="taskPriority">High Priority</div>
-                    <div id="taskStatus">Not Completed</div>
-                    <div id="taskDescription">afpeakpeagoragjmaojmaslkff irgmjraeg feowmeofe.
-                        fdgmfd
-                    </div>
-                </div>
-                <div id="boxOptions">
-                    <button id="editBtn">Edit</button>
-                    <button id="deleteBtn">Dlt</button>
-                </div>
-            </div>
-            <div class="taskBox">
-                <div id="boxInfo">
-                    <div id="taskName">Laundry</div>
-                    <div id="taskDate">20/05/2026</div>
-                    <div id="taskPriority">High Priority</div>
-                    <div id="taskStatus">Not Completed</div>
-                    <div id="taskDescription">afpeakpeagoragjmaojmaslkff irgmjraeg feowmeofe.
-                        fdgmfd poirtjkseror sdolkfm. kds
-                    </div>
-                </div>
-                <div id="boxOptions">
-                    <button id="editBtn">Edit</button>
-                    <button id="deleteBtn">Dlt</button>
-                </div>
-            </div>
+            
         </div>
         
     </div>
@@ -135,8 +30,39 @@
 
     <dialog id="newTaskTab">
         <form action="" method="">
-            <button>close
-            </button>
+            <div id="titleTab">New Task</div>
+            <div id="inputTab">
+                <label for="task_title">Title:</label>
+                <input type="text" id="task_title" name="task_title" required>
+            </div>
+            <div id="inputTab">
+                <label for="task_date">Date:</label>
+                <input type="date" id="task_date" name="task_date" required>
+            </div>
+            <div id="inputTab">
+                <label for="task_priority">Priority:</label>
+                <select id="task_priority" name="task_priority" required>
+                    <option value="1">Low</option>
+                    <option value="2">Moderate</option>
+                    <option value="3">High</option>
+                </select>
+            </div>
+            <div id="inputTab" class="task_status" style="display: none;">
+                <label for="task_checker">Completed:</label>
+                <input type="checkbox" id="task_checker" name="task_status">
+            </div>
+            <div id="inputTab">
+                <label for="proy_title">Proyect Title:</label>
+                <input type="text" id="proy_title" name="proy_title">
+            </div>
+            <div id="inputTab">
+                <label for="task_description">Description:</label>
+                <textarea id="task_description" name="task_description" rows="4" cols="50" maxlength="100"  required></textarea>
+            </div>
+            <div id="btnsTabSection">
+                <input type="submit" value="Confirm" id="confirm-btn">
+                <button id="close-btn">close</button>
+            </div>
         </form>
     </dialog>
 </body>

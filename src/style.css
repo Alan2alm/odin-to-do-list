@@ -13,10 +13,6 @@ body {
     grid-template-columns: 1fr 7fr;
 }
 
-#sidebar, #headbar {
-    background-color: teal;
-}
-
 #headbar{
     background-color: rgb(0, 61, 61);
     grid-row: 1/2;
@@ -59,6 +55,7 @@ body {
 #sidebar{
     grid-row: 2/3;
     grid-column: 1/2;
+    background-color: teal;
     border-right: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -152,4 +149,105 @@ body {
 .taskBox > #boxInfo > #taskName {
     font-weight: 600;
     font-size: 1.3vw;
+}
+
+.taskBox > #boxInfo > #projName {
+    font-weight: 800;
+    font-size: 3vw;
+}
+
+dialog {
+    width: 40vw;
+    height: 80vh;
+    justify-self: center;
+    align-self: center;
+    background-color: teal;
+    border-radius: 30px;
+}
+
+dialog > form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+}
+
+dialog > form > div{
+    padding-block: 10px;
+    display: flex;
+}
+
+dialog > form > #titleTab{
+    font-size: 2vw;
+    font-weight: 700;
+    align-self: center;
+    justify-self: center;
+}
+
+dialog > form > #inputTab > label{
+    font-size: 1.3vw;
+    font-weight: 600;
+    width: 10vw;
+}
+
+dialog > form > #inputTab > input{
+    font-size: 1vw;
+    height: 3vh;
+    width: 24vw;
+}
+
+dialog > form > #inputTab > #task_date, select{
+    font-size: 1vw;
+    height: 4vh;
+    width: 10vw;
+}
+
+dialog > form > #inputTab > #task_description{
+    resize: none;
+    font-size: 1vw;
+    height: 6vh;
+    width: 24vw;
+}
+
+dialog > form > #inputTab > #task_checker{
+    height: 3vh;
+    width: 2vw;
+}
+
+dialog > form > #btnsTabSection{
+    align-self: center;
+    justify-self: center;
+}
+
+input, textarea{
+    border-radius: 5px;
+}
+
+#close-btn{
+    border-radius: 5px;
+}
+
+input:invalid {
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+}
+
+input:valid {
+    border-width: 3px;
+    border-style: solid;
+    border-color: green;
+}
+
+textarea:invalid {
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+}
+
+textarea:valid{
+    border-width: 3px;
+    border-style: solid;
+    border-color: green;
 }
